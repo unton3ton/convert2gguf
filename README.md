@@ -48,9 +48,17 @@ python llama.cpp/convert-hf-to-gguf.py ./mistral-small --outfile mistral-small.g
 ### ./phi3: Path to the model directory.
 ### output_file.gguf: Name of the output file where the GGUF model will be saved.
 ### q8_0: Specifies the quantization type (in this case, quantized 8-bit integer).
+
+# Bonus
+
+```bash
+ollama create mistral-small -f Modelfile
+ollama run mistral-small
+```
  
 # Sources
  
 * [How to convert any HuggingFace Model to gguf file format?](https://www.geeksforgeeks.org/how-to-convert-any-huggingface-model-to-gguf-file-format/)
 * [How to get an access token for Hugging Face](https://www.educative.io/answers/how-to-get-an-access-token-for-hugging-face)
 * [Cannot load a gated model from hugginface despite having access and logging in](https://stackoverflow.com/questions/79211723/cannot-load-a-gated-model-from-hugginface-despite-having-access-and-logging-in)
+* [ollama run from local gguf](https://qwen.readthedocs.io/en/v2.0/run_locally/ollama.html)
